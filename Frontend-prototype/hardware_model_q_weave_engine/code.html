@@ -1,0 +1,259 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#643f00","surface-container-low":"#131b2e","on-surface":"#dae2fd","surface-tint":"#2fd9f4","on-tertiary":"#462b00","error-container":"#93000a","on-tertiary-fixed":"#2a1800","background":"#0b1326","inverse-primary":"#006877","on-secondary-fixed":"#23005c","surface-dim":"#0b1326","on-primary-fixed":"#001f25","primary-fixed":"#a2eeff","on-tertiary-container":"#6e4600","surface-container":"#171f33","surface-container-high":"#222a3d","on-primary":"#00363e","outline":"#859397","surface-variant":"#2d3449","tertiary":"#ffd6a3","on-surface-variant":"#bbc9cd","on-error-container":"#ffdad6","surface":"#0b1326","secondary-container":"#571bc1","tertiary-fixed-dim":"#ffb957","tertiary-container":"#ffb13b","tertiary-fixed":"#ffddb5","surface-container-highest":"#2d3449","surface-container-lowest":"#060e20","on-error":"#690005","on-primary-container":"#005763","primary-container":"#22d3ee","primary":"#8aebff","secondary":"#d0bcff","on-secondary":"#3c0091","on-secondary-container":"#c4abff","outline-variant":"#3c494c","surface-bright":"#31394d","inverse-on-surface":"#283044","inverse-surface":"#dae2fd","error":"#ffb4ab","secondary-fixed":"#e9ddff","secondary-fixed-dim":"#d0bcff","on-secondary-fixed-variant":"#5516be","primary-fixed-dim":"#2fd9f4","on-primary-fixed-variant":"#004e5a"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"24px","margin":"32px","unit":"4px","container-padding":"20px"},"fontFamily":{"body-md":["Inter"],"data-lg":["JetBrains Mono"],"headline-sm":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"data-md":["JetBrains Mono"],"label-caps":["JetBrains Mono"],"display-lg":["Inter"]},"fontSize":{"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-lg":["20px",{"lineHeight":"28px","fontWeight":"500"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"data-md":["14px",{"lineHeight":"20px","fontWeight":"500"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-white/10 z-50 flex flex-col overflow-y-auto"><div class="p-gutter mb-6"><div class="flex items-center gap-2 mb-8"><span class="material-symbols-outlined text-primary text-3xl">4k</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Q-Weave</span></div><div class="space-y-6"><div class="flex flex-col gap-unit"><label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Benchmark Circuit</label><select class="bg-surface-variant text-on-surface font-data-md text-data-md rounded-xl p-3 border border-outline-variant focus:outline-none focus:ring-1 focus:ring-primary"><option>GHZ State</option><option>QAOA Solver</option><option>QFT Transform</option></select></div><div class="flex flex-col gap-unit"><div class="flex justify-between items-center"><label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Noise Severity</label><span class="font-data-md text-data-md text-primary">45%</span></div><input class="w-full accent-primary h-1 bg-surface-variant rounded-full appearance-none cursor-pointer" max="100" min="0" type="range" value="45"/></div><button class="w-full py-3 bg-primary text-on-primary font-label-caps text-label-caps rounded-xl hover:shadow-[0_0_15px_rgba(47,217,244,0.3)] transition-all flex items-center justify-center gap-2">RUN MITIGATION <span class="material-symbols-outlined text-[18px]">play_arrow</span></button></div></div><nav class="flex-1 px-4 border-t border-white/5 pt-6" data-active-classes="bg-primary-container text-on-primary-container font-bold"><div class="px-4 mb-4 font-label-caps text-label-caps text-outline">NAVIGATION</div><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-all mb-1" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-3">analytics</span>Dashboard</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-xl transition-all mb-1 bg-primary-container text-on-primary-container font-bold" data-path="hardware" href="#"><span class="material-symbols-outlined mr-3">developer_board</span>Hardware</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-all mb-1" data-path="compiler" href="#"><span class="material-symbols-outlined mr-3">terminal</span>Compiler</a><a class="flex items-center px-4 py-3 rounded-xl text-on-surface-variant hover:bg-surface-variant hover:text-on-surface transition-all mb-1" data-path="evaluation" href="#"><span class="material-symbols-outlined mr-3">rule</span>Evaluation</a></nav><div class="p-6 border-t border-white/5 text-center"><span class="font-label-caps text-[10px] text-outline-variant">CORE ENGINE V4.0.2-BETA</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-background/80 backdrop-blur-xl border-b border-white/5 z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-6"><span class="font-headline-sm text-headline-sm text-on-surface">Dashboard</span><div class="flex items-center gap-4 bg-surface-container px-4 py-1.5 rounded-full border border-white/5"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-data-md text-data-md text-on-surface">Quantum State: Active</span></div><div class="w-px h-4 bg-outline-variant"></div><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-tertiary">ac_unit</span><span class="font-data-md text-data-md text-on-surface">20mK</span></div></div></div><div class="flex items-center gap-6"><div class="flex gap-4"><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">search</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">notifications</span><span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">settings</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
+<!-- Local Sub-Navigation -->
+<div class="flex items-center justify-between px-8 py-6 bg-surface-container-lowest shadow-sm z-10 relative">
+<div class="flex items-center gap-2 bg-surface-container p-1 rounded-xl shadow-inner">
+<button class="px-6 py-2 rounded-lg bg-primary/20 text-primary font-label-caps text-label-caps tracking-widest shadow-sm transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">share</span>
+        TOPOLOGY
+      </button>
+<button class="px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-label-caps text-label-caps tracking-widest transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+        CALIBRATION
+      </button>
+<button class="px-6 py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-white/5 font-label-caps text-label-caps tracking-widest transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+        ERROR RATES
+      </button>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-secondary animate-pulse shadow-[0_0_10px_rgba(208,188,255,0.6)]"></div>
+<span class="font-data-md text-data-md text-on-surface-variant">Live Telemetry</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Main Grid Layout -->
+<div class="grid grid-cols-12 gap-8 p-8 relative">
+<!-- Decorative Background Glows -->
+<div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[80px] pointer-events-none"></div>
+<!-- Left Panel: Network Graph -->
+<div class="col-span-12 xl:col-span-8 flex flex-col relative z-10">
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-3xl p-6 h-[700px] shadow-2xl flex flex-col relative overflow-hidden group">
+<!-- Graph Header -->
+<div class="flex items-start justify-between mb-4 relative z-10">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">QPU Topology Map</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Real-time visualization of 16-qubit lattice. Edge colors represent crosstalk severity (Cyan: <1%, Violet: >5%).</p>
+</div>
+<div class="flex flex-col gap-1 text-right">
+<span class="font-label-caps text-label-caps text-primary">GRAPH RESOLUTION: 4K</span>
+<span class="font-data-md text-data-md text-on-surface-variant">LATTICE: HEXAGONAL-D</span>
+</div>
+</div>
+<!-- Graph Visualization Area (Inline SVG) -->
+<div class="flex-1 w-full relative bg-surface-container-lowest/30 rounded-2xl shadow-inner flex items-center justify-center overflow-hidden">
+<!-- Decorative Axes/Grid -->
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] [mask-image:radial-gradient(ellipse_at_center,black_40%,transparent_80%)] pointer-events-none"></div>
+<svg class="w-full h-full drop-shadow-xl" preserveaspectratio="xMidYMid meet" viewbox="0 0 800 500">
+<defs>
+<!-- Filters -->
+<filter height="140%" id="glow" width="140%" x="-20%" y="-20%">
+<fegaussianblur result="blur" stddeviation="4"></fegaussianblur>
+<fecomposite in="SourceGraphic" in2="blur" operator="over"></fecomposite>
+</filter>
+<!-- Gradients for Edges -->
+<lineargradient id="grad-stable" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop class="text-primary" offset="0%" stop-color="currentColor"></stop>
+<stop class="text-primary-fixed-dim" offset="100%" stop-color="currentColor"></stop>
+</lineargradient>
+<lineargradient id="grad-warning" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop class="text-primary" offset="0%" stop-color="currentColor"></stop>
+<stop class="text-secondary" offset="100%" stop-color="currentColor"></stop>
+</lineargradient>
+<lineargradient id="grad-critical" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop class="text-secondary" offset="0%" stop-color="currentColor"></stop>
+<stop class="text-error" offset="100%" stop-color="currentColor"></stop>
+</lineargradient>
+</defs>
+<!-- Edges (Paths) -->
+<g class="transition-all duration-1000" fill="none" stroke-width="3">
+<!-- Stable Edges -->
+<path class="animate-[dash_20s_linear_infinite]" d="M 400 100 L 250 200" opacity="0.6" stroke="url(#grad-stable)" stroke-dasharray="4 4"></path>
+<path d="M 400 100 L 550 200" opacity="0.6" stroke="url(#grad-stable)"></path>
+<path d="M 250 200 L 250 350" opacity="0.6" stroke="url(#grad-stable)"></path>
+<path d="M 550 200 L 550 350" opacity="0.6" stroke="url(#grad-stable)"></path>
+<!-- Warning Edges (Crosstalk) -->
+<path d="M 400 100 L 400 275" opacity="0.9" stroke="url(#grad-warning)" stroke-width="5"></path>
+<path d="M 250 200 L 400 275" opacity="0.8" stroke="url(#grad-warning)"></path>
+<path d="M 550 200 L 400 275" opacity="0.8" stroke="url(#grad-warning)"></path>
+<!-- Critical Edges -->
+<path d="M 400 275 L 250 350" filter="url(#glow)" opacity="1" stroke="url(#grad-critical)" stroke-width="6"></path>
+<path d="M 400 275 L 550 350" opacity="0.9" stroke="url(#grad-critical)" stroke-width="4"></path>
+<path d="M 250 350 L 400 450" opacity="0.8" stroke="url(#grad-critical)"></path>
+<path d="M 550 350 L 400 450" opacity="0.7" stroke="url(#grad-warning)"></path>
+</g>
+<!-- Nodes (Qubits) -->
+<g class="font-data-md text-data-md text-on-surface" dominant-baseline="central" text-anchor="middle">
+<!-- Q0 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(400, 100)">
+<circle class="text-surface-bright" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-primary font-bold">Q0</text>
+</g>
+<!-- Q1 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(250, 200)">
+<circle class="text-surface-bright" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-on-surface">Q1</text>
+</g>
+<!-- Q2 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(550, 200)">
+<circle class="text-surface-bright" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-on-surface">Q2</text>
+</g>
+<!-- Q3 (Central / High Crosstalk) -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(400, 275)">
+<circle class="text-secondary/40 animate-ping" fill="currentColor" r="32"></circle>
+<circle class="text-secondary" fill="currentColor" filter="url(#glow)" r="28"></circle>
+<circle class="text-surface-container-highest" fill="currentColor" r="24"></circle>
+<text class="fill-secondary-fixed">Q3</text>
+</g>
+<!-- Q4 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(250, 350)">
+<circle class="text-error/50" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-error">Q4</text>
+</g>
+<!-- Q5 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(550, 350)">
+<circle class="text-surface-bright" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-on-surface">Q5</text>
+</g>
+<!-- Q6 -->
+<g class="cursor-pointer hover:scale-110 transition-transform origin-center" transform="translate(400, 450)">
+<circle class="text-surface-bright" fill="currentColor" filter="url(#glow)" r="24"></circle>
+<circle class="text-surface-container" fill="currentColor" r="20"></circle>
+<text class="fill-on-surface">Q6</text>
+</g>
+</g>
+</svg>
+<!-- Key / Legend Overlay -->
+<div class="absolute bottom-6 left-6 bg-surface-container-highest/80 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg flex items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="w-3 h-1 bg-primary rounded-full"></div>
+<span class="font-data-md text-data-md text-on-surface-variant text-[12px]">Optimal</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
+<span class="font-data-md text-data-md text-on-surface-variant text-[12px]">Moderate</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-3 h-1 bg-gradient-to-r from-secondary to-error rounded-full"></div>
+<span class="font-data-md text-data-md text-on-surface-variant text-[12px]">Critical</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Panel: Interaction Matrix & Stats -->
+<div class="col-span-12 xl:col-span-4 flex flex-col gap-8 relative z-10">
+<!-- Mini Stat Cards -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container/80 backdrop-blur-xl p-5 rounded-2xl shadow-md group hover:bg-surface-container-high transition-colors">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-2">GLOBAL COHERENCE</p>
+<div class="flex items-baseline gap-2">
+<h3 class="font-display-lg text-[36px] font-bold text-primary">98.4</h3>
+<span class="font-data-md text-data-md text-primary-fixed-dim">%</span>
+</div>
+</div>
+<div class="bg-surface-container/80 backdrop-blur-xl p-5 rounded-2xl shadow-md group hover:bg-surface-container-high transition-colors">
+<p class="font-label-caps text-label-caps text-on-surface-variant mb-2">PEAK CROSSTALK</p>
+<div class="flex items-baseline gap-2">
+<h3 class="font-display-lg text-[36px] font-bold text-secondary">0.12</h3>
+<span class="font-data-md text-data-md text-secondary-fixed-dim">MHz</span>
+</div>
+</div>
+</div>
+<!-- Interaction Matrix Table -->
+<div class="flex-1 bg-surface-container/60 backdrop-blur-xl rounded-3xl p-6 shadow-2xl flex flex-col relative overflow-hidden">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Interaction Matrix</h3>
+<button class="text-primary hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-[14px]">
+          Static J-coupling coefficients between adjacent nodes (MHz). High values induce correlated phase errors.
+        </p>
+<!-- Monospaced Data Grid -->
+<div class="flex-1 overflow-x-auto">
+<table class="w-full text-right font-data-md text-data-md border-collapse">
+<thead>
+<tr class="text-on-surface-variant text-[12px] opacity-70">
+<th class="p-3 text-left font-normal">NODE</th>
+<th class="p-3 font-normal">Q0</th>
+<th class="p-3 font-normal">Q1</th>
+<th class="p-3 font-normal">Q2</th>
+<th class="p-3 font-normal">Q3</th>
+<th class="p-3 font-normal">Q4</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<tr class="bg-white/[0.02] hover:bg-white/[0.05] transition-colors rounded-xl group">
+<td class="p-3 text-left text-primary font-bold">Q0</td>
+<td class="p-3 text-surface-variant group-hover:text-on-surface-variant">-</td>
+<td class="p-3">0.02</td>
+<td class="p-3">0.01</td>
+<td class="p-3 text-secondary">0.08</td>
+<td class="p-3">0.00</td>
+</tr>
+<tr class="hover:bg-white/[0.05] transition-colors group">
+<td class="p-3 text-left text-primary font-bold">Q1</td>
+<td class="p-3">0.02</td>
+<td class="p-3 text-surface-variant group-hover:text-on-surface-variant">-</td>
+<td class="p-3">0.00</td>
+<td class="p-3 text-secondary">0.09</td>
+<td class="p-3">0.01</td>
+</tr>
+<tr class="bg-white/[0.02] hover:bg-white/[0.05] transition-colors group">
+<td class="p-3 text-left text-primary font-bold">Q2</td>
+<td class="p-3">0.01</td>
+<td class="p-3">0.00</td>
+<td class="p-3 text-surface-variant group-hover:text-on-surface-variant">-</td>
+<td class="p-3 text-secondary">0.07</td>
+<td class="p-3">0.01</td>
+</tr>
+<!-- Highlighted Row -->
+<tr class="bg-secondary/10 hover:bg-secondary/20 transition-colors shadow-[inset_4px_0_0_0_#d0bcff] group">
+<td class="p-3 text-left text-secondary font-bold">Q3</td>
+<td class="p-3 text-secondary">0.08</td>
+<td class="p-3 text-secondary">0.09</td>
+<td class="p-3 text-secondary">0.07</td>
+<td class="p-3 text-surface-variant group-hover:text-secondary-fixed-dim">-</td>
+<td class="p-3 text-error font-bold">0.12</td>
+</tr>
+<tr class="bg-white/[0.02] hover:bg-white/[0.05] transition-colors group">
+<td class="p-3 text-left text-error font-bold">Q4</td>
+<td class="p-3">0.00</td>
+<td class="p-3">0.01</td>
+<td class="p-3">0.01</td>
+<td class="p-3 text-error font-bold">0.12</td>
+<td class="p-3 text-surface-variant group-hover:text-on-surface-variant">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Action Button -->
+<button class="mt-6 w-full py-4 rounded-xl bg-transparent border border-secondary text-secondary font-label-caps text-label-caps tracking-[0.15em] hover:bg-secondary/10 hover:shadow-[0_0_20px_rgba(208,188,255,0.2)] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+          APPLY DECOUPLING SEQUENCE
+        </button>
+</div>
+</div>
+</div>
+<style>
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -100;
+      }
+    }
+  </style>
+</div></main></div></body></html>
